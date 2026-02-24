@@ -512,5 +512,5 @@ La aplicación está desplegada en AWS ECS Fargate conectada a RDS PostgreSQL. V
 
 ## Autor
 
-**Cobak** - Backend Developer & DevOps  
-Proyecto desarrollado como parte del portafolio profesional para demostrar competencias en desarrollo backend y prácticas DevOps con tecnologías de producción.
+**Luis Rodriguez** - Backend Developer & DevOps Junior 
+
