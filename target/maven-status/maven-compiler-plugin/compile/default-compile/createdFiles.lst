@@ -1,0 +1,16 @@
+com\cobak\carcatalog\config\OpenApiConfig.class
+com\cobak\carcatalog\model\dto\CarRequestDTO$CarRequestDTOBuilder.class
+com\cobak\carcatalog\CarCatalogApiApplication.class
+com\cobak\carcatalog\repository\CarRepository.class
+com\cobak\carcatalog\model\dto\CarResponseDTO.class
+com\cobak\carcatalog\service\CarService.class
+com\cobak\carcatalog\model\dto\CarResponseDTO$CarResponseDTOBuilder.class
+com\cobak\carcatalog\exception\GlobalExceptionHandler.class
+com\cobak\carcatalog\model\entity\Car.class
+com\cobak\carcatalog\model\dto\ApiResponse.class
+com\cobak\carcatalog\model\dto\CarRequestDTO.class
+com\cobak\carcatalog\service\impl\CarServiceImpl.class
+com\cobak\carcatalog\exception\ResourceNotFoundException.class
+com\cobak\carcatalog\model\entity\Car$CarBuilder.class
+com\cobak\carcatalog\controller\CarController.class
+com\cobak\carcatalog\model\dto\ApiResponse$ApiResponseBuilder.class

@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: car-catalog-api
+  labels:
+    app: car-catalog-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: car-catalog-api
+  template:
+    metadata:
+      labels:
+        app: car-catalog-api
+    spec:
+      containers:
+        - name: car-catalog-api
+          image: 620525694411.dkr.ecr.us-east-1.amazonaws.com/car-catalog-api:latest
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: car-catalog-config
+            - secretRef:
+                name: car-catalog-secret
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 15

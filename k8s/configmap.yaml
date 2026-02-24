@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: car-catalog-config
+data:
+  DB_HOST: car-catalog-db.cu5wy86i6ugs.us-east-1.rds.amazonaws.com
+  DB_PORT: "5432"
+  DB_NAME: car_catalog
+  DB_USERNAME: postgres
+  SERVER_PORT: "8080"
